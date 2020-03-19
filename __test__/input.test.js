@@ -22,8 +22,6 @@ const badInputD = ['-a', 'false'];
 // command line input with '-a' followed by a string
 const goodInput = ['-a', 'This is a note'];
 
-
-
 describe('the module handles bad input gracefully', () => {
   it('handles empty input', () => {
     let result = new Input(badInputA);

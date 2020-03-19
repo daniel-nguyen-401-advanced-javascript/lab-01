@@ -2,9 +2,17 @@
 
 console.log('i have an app');
 
-console.log(process.argv.splice(2));
+// console.log(process.argv.splice(2));
 
 /*
+- Requires the library files you will be writing (input, notes)
+- Instantiates an "Input" parser (?)
+- Sends properly parsed input to the Notes library for display (notes module?)
+- saves command line input
+- calls Input constructor
+  - CLI is parameter
+- calls Notes constructor
+  - Input instance is parameter
 
 */
 
