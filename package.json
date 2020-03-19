@@ -10,10 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/daniel-nguyen-401-advanced-javascript/lab-01.git"
   },
-  "author": "",
+  "author": "Daniel Nguyen",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/daniel-nguyen-401-advanced-javascript/lab-01/issues"
   },
-  "homepage": "https://github.com/daniel-nguyen-401-advanced-javascript/lab-01#readme"
+  "homepage": "https://github.com/daniel-nguyen-401-advanced-javascript/lab-01#readme",
+  "dependencies": {
+    "minimist": "^1.2.5"
+  }
 }
