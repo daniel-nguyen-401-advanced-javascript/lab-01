@@ -1,0 +1,19 @@
+{
+  "name": "lab-01",
+  "version": "1.0.0",
+  "description": "## Project: Node Ecosystem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniel-nguyen-401-advanced-javascript/lab-01.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniel-nguyen-401-advanced-javascript/lab-01/issues"
+  },
+  "homepage": "https://github.com/daniel-nguyen-401-advanced-javascript/lab-01#readme"
+}
