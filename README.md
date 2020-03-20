@@ -18,11 +18,12 @@
 !Everything below is copied from the old lab. I need to update it!
 
 ### Modules
-#### `pol.js`
+#### `index.js`
+#### `notes.js`
 ##### Exported Values and Methods
 
-##### `isAlive(dead) -> boolean`
-Returns true/false to indicate how the server works
+##### `Input -> object`
+checks for correct input, returns object for Notes to check against
 
 ### Setup
 
@@ -31,11 +32,8 @@ Returns true/false to indicate how the server works
 
 #### How to initialize/run your application (where applicable)
 
-- `npm start`
-- Endpoint: `/`
-  - Returns a boolean
-- Endpoint: `/docs`
-  - Returns JSDoc Documentation Pages
+- `notes -a "notescopy"`
+- should return "i have an app", "adding note", "(randomnum): (notescopy)"
 
 #### How to use your library (where applicable)
 
@@ -46,7 +44,6 @@ Returns true/false to indicate how the server works
 - Describe any tests that you did not complete, skipped, etc 
 
 - Unit Tests: `npm test`
-- Lint Tests: `npm run lint`
 
 #### UML
 
