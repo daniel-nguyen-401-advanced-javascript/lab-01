@@ -10,10 +10,10 @@
 - [ci/cd](http://xyz.com) (GitHub Actions)
   - Have not seen tutorial on GitHub Actions yet but will use that going forward
 - [back-end server url](http://xyz.com) (when applicable)
-- [front-end application](https://daniel-nguyen-lab-00.herokuapp.com) (when applicable)
+- [front-end application](NA)
 
 #### Documentation
-- [jsdoc](https://daniel-nguyen-lab-00.herokuapp.com/docs/)
+- [jsdoc]
 
 !Everything below is copied from the old lab. I need to update it!
 

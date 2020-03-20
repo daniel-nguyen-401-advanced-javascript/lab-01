@@ -1,8 +1,7 @@
 'use strict';
 
 const Notes = require('../lib/notes.js');
-const Input = require('../lib/input.js');
-const minimist = require('minimist');
+const Input = require('../lib/input.js'); 
 
 // i have no idea what is supposed to go in here
 
