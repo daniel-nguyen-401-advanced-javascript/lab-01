@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 'use strict';
 
 console.log('i have an app');
@@ -13,8 +14,12 @@ console.log('i have an app');
   - CLI is parameter
 - calls Notes constructor
   - Input instance is parameter
-
 */
+
+/**
+ * Simple Server
+ * @module index
+ */
 
 const Input = require('./lib/input.js');
 const Notes = require('./lib/notes.js');
