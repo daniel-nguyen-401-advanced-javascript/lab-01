@@ -1,6 +1,8 @@
 'use strict';
 
 const Notes = require('../lib/notes.js');
+const Input = require('../lib/input.js');
+const minimist = require('minimist');
 
 // i have no idea what is supposed to go in here
 
@@ -10,30 +12,17 @@ const Notes = require('../lib/notes.js');
 
 // testing wants to check that good input and bad input is handled well
 
-// bad input
-// no console.log
-const badInputA = [];
-
 // good input
 // yes console.log
-const goodInput = ['console.log'];
+const goodInput = ['-a', 'text'];
 
-//dunno what this next stuff does
-// earl jay posted it in slack, seemed useful
-jest.spyOn(global.console, 'log');
-console.log = jest.fn();
-
-describe('the notes module handles bad input gracefully', () => {
-  it('handles empty input, no console log', () => {
-    let result = new Input(badInputA);
-    expect(console.log).not.toHaveBeenCalled();
-  })
-})
-
-
-describe('the notes module handles good input gracefully', () => {
+describe('add() outputs console log', () => {
   it('handles good input for console log', () => {
     let result = new Input(goodInput);
-    expect(console.log).toHaveBeenCalled();
+    let newNotes = new Notes(result);
+    let spy = jest.spyOn(global.console, 'log');
+    let add = jest.fn(newNotes.add());
+    add();
+    expect(spy).toHaveBeenCalled();
   })
 })
