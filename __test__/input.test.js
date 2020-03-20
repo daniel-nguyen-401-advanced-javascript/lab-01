@@ -16,7 +16,7 @@ const badInputB = ['WRONG'];
 // command line in put has wrong flag
 const badInputC = ['-b', 'WRONG'];
 // command line input has data that is not a string
-const badInputD = ['-a', 'false'];
+const badInputD = ['-a', ''];
 
 // good input
 // command line input with '-a' followed by a string
@@ -35,7 +35,7 @@ describe('the module handles bad input gracefully', () => {
 
   it('handles wrong input', () => {
     let result = new Input(badInputB);
-    expect(result.valid()).toBeFalsy();
+    expect(result.valid()).toBeFalsy(); 
   })
 
   it('handles wrong flag', () => {
