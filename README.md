@@ -6,10 +6,9 @@
 
 ### Links and Resources
 
-- [submission PR]()
-- [ci/cd](http://xyz.com) (GitHub Actions)
-  - Have not seen tutorial on GitHub Actions yet but will use that going forward
-- [back-end server url](http://xyz.com) (when applicable)
+- [submission PR](https://github.com/daniel-nguyen-401-advanced-javascript/lab-01/pull/7)
+- [ci/cd](https://github.com/daniel-nguyen-401-advanced-javascript/lab-01/actions) (GitHub Actions)
+- [back-end server url](NA) 
 - [front-end application](NA)
 
 #### Documentation
@@ -18,11 +17,15 @@
 !Everything below is copied from the old lab. I need to update it!
 
 ### Modules
-#### `pol.js`
+#### `index.js`
+#### `notes.js`
 ##### Exported Values and Methods
 
-##### `isAlive(dead) -> boolean`
-Returns true/false to indicate how the server works
+##### `Input -> object`
+checks for correct input, returns object for Notes to check against
+
+##### `Notes -> console.log`
+checks for correct input, then outputs console log
 
 ### Setup
 
@@ -31,11 +34,8 @@ Returns true/false to indicate how the server works
 
 #### How to initialize/run your application (where applicable)
 
-- `npm start`
-- Endpoint: `/`
-  - Returns a boolean
-- Endpoint: `/docs`
-  - Returns JSDoc Documentation Pages
+- `notes -a "notescopy"`
+- should return "i have an app", "adding note", "(randomnum): (notescopy)"
 
 #### How to use your library (where applicable)
 
@@ -46,7 +46,6 @@ Returns true/false to indicate how the server works
 - Describe any tests that you did not complete, skipped, etc 
 
 - Unit Tests: `npm test`
-- Lint Tests: `npm run lint`
 
 #### UML
 
