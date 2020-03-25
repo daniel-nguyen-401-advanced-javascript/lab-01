@@ -43,7 +43,7 @@ let importantStuff = process.argv.slice(2);
 let formattedInput = new Input(importantStuff);
 // creates instance of input
 
-let note = New Note(formattedInput);
+let note = new Note(formattedInput);
 // creates instance of Note
 ///all of this leads to noteBody aka prams for Note constructor
 
@@ -243,6 +243,13 @@ const dbOperations = async () => {
       // use try/catch here because otherwise, error makes app hang
       await newNote.save();
       // saves full version of this note obj
+
+      // if it belongs to a category
+      // see if that cat exists
+      // if not, add that cat (let newCat = new Categories({}))
+
+          // if so, then get id of the cate
+          // save that ID in the cat array for this note
      } catch(e){
        console.error(e);
      }
@@ -367,3 +374,5 @@ const categoriesSchema = mongoose.Schema({
 const categoriesModel = mongoose.model('categories', categoriesSchema);
 
 module.exports = categoriesModel;
+
+//
