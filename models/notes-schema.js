@@ -2,12 +2,13 @@
 
 const mongoose = require('mongoose');
 
-const notesSchema = mongoose.Schema({
-  note: { type: String, required: true},
-  category: { type: Array },
+const schema = mongoose.Schema({
+  // id does not need to be included, it will be added by default
+  text: { required: true, type: String},
+  category: { required: false, type: String},
 });
 
 //build data model from this schema
-const notesModel = mongoose.model('notes', notesSchema);
+const model = mongoose.model('notes', schema);
 
-module.exports = notesModel;
+module.exports = model;
