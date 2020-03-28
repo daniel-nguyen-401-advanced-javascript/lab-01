@@ -20,7 +20,11 @@ class Input {
       switch(key){
         case 'a':
         case 'add':
-          this.command = { action: 'add', payload: formatted[key], category: false};
+          this.command = { 
+            action: 'add', 
+            payload: formatted[key], 
+            category: false
+          };
           break;
         case 'c':
         case 'category':
@@ -28,7 +32,10 @@ class Input {
           break;
         case 'l':
         case 'list':
-          this.command = { action: 'list', payload: formatted[key]};
+          this.command = { 
+            action: 'list', 
+            payload: formatted[key]
+          };
           break;
         case 'd':
         case 'delete':
