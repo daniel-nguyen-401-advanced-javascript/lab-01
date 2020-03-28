@@ -10,11 +10,13 @@ class Input {
     this.command = {};
 
     let formatted = minimist(cliArgs);
+    console.log('formatted:', formatted);
 
     let keys = Object.keys(formatted);
 
     keys.forEach(key => {
       // key, val = formatted[key]
+      console.log('keys:', keys);
       switch(key){
         case 'a':
         case 'add':
@@ -37,10 +39,7 @@ class Input {
           break;
         case 'd':
         case 'delete':
-          this.command = { 
-            action: 'delete', 
-            payload: formatted[key]
-          };
+          this.command = { action: 'delete', payload: formatted[key]};
           break;
         default:
           break;
